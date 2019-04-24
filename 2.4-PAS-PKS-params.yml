@@ -12,7 +12,8 @@ vcenter_datastore: iscsi
 ## NSX managers config
 
 nsx_manager_deployment_size: small
-nsx_manager_ips: 192.168.110.33,192.168.110.34,192.168.110.35 #number of managers is based on number of IPs configued
+nsx_manager_ips: 192.168.110.34,192.168.110.35,192.168.110.36 #number of managers is based on number of IPs configued
+nsx_manager_virtual_ip: 192.168.110.33
 nsx_manager_password: VMware1!VMware1!
 nsx_manager_root_pwd: VMware1!VMware1!
 nsx_manager_ssh_enabled: true
