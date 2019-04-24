@@ -12,7 +12,7 @@ vcenter_datastore: iscsi
 ## NSX managers config
 
 nsx_manager_deployment_size: small
-nsx_manager_ips: 192.168.110.33,192.168.110.34,192.168.110.35 #number of managers is based on number if IPs configued
+nsx_manager_ips: 192.168.110.33,192.168.110.34,192.168.110.35 #number of managers is based on number of IPs configued
 nsx_manager_password: VMware1!VMware1!
 nsx_manager_root_pwd: VMware1!VMware1!
 nsx_manager_ssh_enabled: true
@@ -28,7 +28,7 @@ dns_server: 192.168.110.10
 mgmt_portgroup: VM-RegionA01-vDS-COMP
 netmask: 255.255.255.0
 
-## If not using the docker image thatd ownloads teh bits automatically uncomment the file names here 
+## If not using the docker image thatd ownloads teh bits automatically uncomment the file names here
 
 nsx_image_webserver: "http://192.168.110.11:40001"
 #ova_file_name: "nsx-unified-appliance-2.3.1.0.0.11294305.ova"
@@ -316,3 +316,4 @@ nsx_t_lbr_spec: |
       members:
       - ip: 192.168.20.41       # Internal ip of Diego Brain where ssh proxy runs
         port: 2222
+
