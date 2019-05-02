@@ -1,4 +1,4 @@
-enable_ansible_debug: false # set value to true for verbose output from ansible
+enable_ansible_debug: true # set value to true for verbose output from ansible
 #nsx_t_pipeline_branch: master #only uncomment if using branch other than Master
 
 # vCenter details to deploy the Mgmt OVAs (Mgr, Edge, Controller)
@@ -91,7 +91,7 @@ edge_fabric_name_prefix: EdgeNode
 edge_transport_node_prefix: edge-transp-node
 edge_cli_password: "VMware1!VMware1!"
 edge_root_password: "VMware1!VMware1!"
-edge_deployment_size: "medium"   #Large recommended for PKS deployments
+edge_deployment_size: "Large"   #Large required for PKS deployments
 
 vc_datacenter_for_edge: RegionA01
 vc_cluster_for_edge: RegionA01-MGMT
@@ -317,4 +317,3 @@ nsx_t_lbr_spec: |
       members:
       - ip: 192.168.20.41       # Internal ip of Diego Brain where ssh proxy runs
         port: 2222
-
